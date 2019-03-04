@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>kadai</title>
+</head>
+<body style="background-color:lightgreen">
+  <h1>ToDoリスト</h1>
+  <form>
+    <input type="radio" name = "st" id = "allradio" checked = "checked"> 全て
+    <input type="radio" name = "st" id = "workingRadio"> 作業中
+    <input type="radio" name = "st" id = "compRadio"> 完了
+  </form>
+  <div class="tasks">
+    <table id="table">
+      <tr>
+        <th>ID</th>
+        <th>コメント</th>
+        <th>状態</th>
+      </tr>
+    </table>
+  </div>
+  <div class="newtask">
+    <h2>新規タスクの追加</h2>
+    <form id="form1">
+      <input type="text" placeholder="タスクを入力" id="inputTask"></input>
+      <button type="button" id="addTask" style="background-color:lightblue">追加</button>
+    </form>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>
